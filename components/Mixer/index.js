@@ -148,6 +148,8 @@ class Mixer extends Component {
             vg: state.vg,
         }
 
+        baseLiq[state.nicType] -= nicPct;
+
         // remove flavour liquid from base liquids
         state.items.forEach((item) => {
 
