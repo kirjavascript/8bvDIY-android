@@ -25,22 +25,11 @@ const styles = StyleSheet.create({
     }
 });
 
-class ReactNativeDemo extends Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            hello:'asdasd'
-        }
-    }
-
-    render() {
-        return <View style={styles.container}>
-            <Logo/>
-            <Mixer/>
-        </View>;
-    }
+let ReactNativeDemo = (props) => {
+    return <View style={styles.container}>
+        <Logo/>
+        <Mixer/>
+    </View>;
 }
 
 AppRegistry.registerComponent('ReactNativeDemo', () => ReactNativeDemo);
